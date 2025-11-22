@@ -1,84 +1,108 @@
-⚡ Sanity Content Studio - Backend
-This repository contains the Headless CMS (Backend) for my personal portfolio website. Built with Sanity.io, it manages all dynamic content including blog posts, project showcases, and SEO metadata.
+# ⚡ Sanity Content Studio – Backend
 
-🚀 Live Links
-Admin Studio (CMS): https://rajeev-kumar-blog.sanity.studio/
-Frontend Website: https://rajeev-portfolio-delta.vercel.app/
+This repository contains the **Headless CMS (Backend)** for my personal portfolio website.  
+Built with **Sanity.io**, it manages all dynamic content including blog posts, project showcases, and SEO metadata.
 
-✨ Key Features
-📝 Dynamic Content Management: Create, edit, and delete blog posts and projects in real-time.
-🔍 Custom SEO Schema: Integrated seo.js schema to manage:
-1. Meta Titles & Descriptions for Google Search.
-2. Open Graph Images for Social Media (LinkedIn/WhatsApp) previews.
-3. Keywords and Tags.
+---
 
-☁️ Cloud Hosted: The studio is deployed on Sanity's managed cloud environment.
-⚡ Real-time Updates: Content updates are instantly reflected on the frontend (Vercel).
+## 🚀 Live Links
 
-🛠️ Tech Stack
-Core: Sanity v3
-Language: JavaScript (ES6+)
-Environment: Node.js
-Deployment: Sanity Cloud
+- **Admin Studio (CMS):** https://rajeev-kumar-blog.sanity.studio/  
+- **Frontend Website:** https://rajeev-portfolio-delta.vercel.app/
 
-📂 Project Structure
+---
+
+## ✨ Key Features
+
+### 📝 Dynamic Content Management
+Create, edit, and delete **blog posts**, **projects**, and other content in real-time.
+
+### 🔍 Custom SEO Schema
+Integrated `seo.js` schema includes:
+1. Meta Titles & Descriptions  
+2. Open Graph Images for Social Media  
+3. Keywords and Tags
+
+### ☁️ Cloud Hosted
+Hosted on **Sanity Cloud** with production-ready setup.
+
+### ⚡ Real-time Updates
+Content changes instantly reflect on the Vercel-hosted frontend.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Sanity v3**
+- **JavaScript (ES6+)**
+- **Node.js**
+- **Sanity Cloud (Deployment)**
+
+---
+
+## 📂 Project Structure
 
 rajeev-blog-studio/
-├── schemaTypes/         # Content Schemas (The Brain 🧠)
-│   ├── index.js         # Schema registry
-│   ├── post.js          # Blog Post definition
-│   ├── author.js        # Author details
-│   ├── category.js      # Categories/Tags
-│   ├── blockContent.js  # Rich Text Editor config
-│   └── seo.js           # ⚡ Custom SEO Configuration
-├── static/              # Static assets (Logos/Icons)
-├── sanity.cli.js        # CLI Configuration
-├── sanity.config.js     # Main Studio Configuration
-└── package.json         # Dependencies & Scripts
+├── schemaTypes/ # Content Schemas (The Brain 🧠)
+│ ├── index.js # Schema registry
+│ ├── post.js # Blog Post definition
+│ ├── author.js # Author details
+│ ├── category.js # Categories/Tags
+│ ├── blockContent.js # Rich Text Editor config
+│ └── seo.js # ⚡ Custom SEO Configuration
+├── static/ # Static assets (Logos/Icons)
+├── sanity.cli.js # CLI Configuration
+├── sanity.config.js # Main Studio Configuration
+└── package.json # Dependencies & Scripts
 
 
-⚙️ Getting Started (Local Development)
-Follow these steps to run the studio locally on your machine:
 
-1. Clone the Repository
+---
 
-git clone [https://github.com/rajeevkumar-nita/rajeev-blog-studio.git](https://github.com/rajeevkumar-nita/rajeev-blog-studio.git)
+## ⚙️ Getting Started (Local Development)
+
+Follow the steps below to run the studio locally:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/rajeevkumar-nita/rajeev-blog-studio.git
 cd rajeev-blog-studio
 
-2. Install Dependencies
+2️⃣ Install Dependencies
 npm install
 
-3. Run Development Server
+3️⃣ Run Development Server
 npm run dev
 
-The studio will open at http://localhost:3333.
+Studio will open at:
+👉 http://localhost:3333
 
 🚀 Deployment
-
-After making changes to the schemas (e.g., adding new fields), deploy the studio to production using:
-
+After making schema updates, deploy the studio to production:
 npm run deploy
 
-This updates the live instance at rajeev-kumar-blog.sanity.studio.
+This updates the live instance at:
+👉 rajeev-kumar-blog.sanity.studio
 
 📝 Custom SEO Schema Implementation
-I have implemented a custom object type seo to handle metadata dynamically.
+ i implemented a reusable SEO object:
+
 
 Fields:
-metaTitle: Title for search engines (Max 60 chars).
-metaDescription: Summary for search results (Max 160 chars).
-openGraphImage: Custom image for social media sharing cards.
+metaTitle – Title for search engines (Max 60 chars)
+metaDescription – Summary for search results (Max 160 chars)
+openGraphImage – Image for LinkedIn/WhatsApp sharing
 
-Usage in post.js:
+Usage inside post.js:
 defineField({
   name: 'seo',
   title: 'SEO Settings',
   type: 'seo',
 })
 
-
 👤 Author
 Rajeev Kumar
 Portfolio: https://rajeev-portfolio-delta.vercel.app/
 GitHub: https://github.com/rajeevkumar-nita
-Linkedin: linkedin.com/in/rajeevkumar-nita
+LinkedIn: https://linkedin.com/in/rajeevkumar-nita
