@@ -42,19 +42,19 @@ Content changes instantly reflect on the Vercel-hosted frontend.
 
 ## 📂 Project Structure
 
+```text
 rajeev-blog-studio/
-├── schemaTypes/ # Content Schemas (The Brain 🧠)
-│ ├── index.js # Schema registry
-│ ├── post.js # Blog Post definition
-│ ├── author.js # Author details
-│ ├── category.js # Categories/Tags
-│ ├── blockContent.js # Rich Text Editor config
-│ └── seo.js # ⚡ Custom SEO Configuration
-├── static/ # Static assets (Logos/Icons)
-├── sanity.cli.js # CLI Configuration
-├── sanity.config.js # Main Studio Configuration
-└── package.json # Dependencies & Scripts
-
+├── schemaTypes/         # Content Schemas (The Brain 🧠)
+│   ├── index.js         # Schema registry
+│   ├── post.js          # Blog Post definition
+│   ├── author.js        # Author details
+│   ├── category.js      # Categories/Tags
+│   ├── blockContent.js  # Rich Text Editor config
+│   └── seo.js           # ⚡ Custom SEO Configuration
+├── static/              # Static assets (Logos/Icons)
+├── sanity.cli.js        # CLI Configuration
+├── sanity.config.js     # Main Studio Configuration
+└── package.json         # Dependencies & Scripts
 
 
 ---
