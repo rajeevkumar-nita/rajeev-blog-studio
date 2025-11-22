@@ -113,8 +113,9 @@ defineField({
 })
 ```
 
-👤 Author:
-Rajeev Kumar
-Portfolio: https://rajeev-portfolio-delta.vercel.app/
-GitHub: https://github.com/rajeevkumar-nita
-LinkedIn: https://linkedin.com/in/rajeevkumar-nita
+## 👤 Author
+
+**Rajeev Kumar**
+- Portfolio: https://rajeev-portfolio-delta.vercel.app/
+- GitHub: https://github.com/rajeevkumar-nita
+- LinkedIn: https://linkedin.com/in/rajeevkumar-nita
