@@ -56,7 +56,7 @@ rajeev-blog-studio/
 ├── sanity.config.js     # Main Studio Configuration
 └── package.json         # Dependencies & Scripts
 
-
+```
 ---
 
 ## ⚙️ Getting Started (Local Development)
@@ -68,26 +68,36 @@ Follow the steps below to run the studio locally:
 ```bash
 git clone https://github.com/rajeevkumar-nita/rajeev-blog-studio.git
 cd rajeev-blog-studio
+```
 
 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
 3️⃣ Run Development Server
+```bash
 npm run dev
+```
 
 Studio will open at:
+```bash
 👉 http://localhost:3333
+```
 
 🚀 Deployment
 After making schema updates, deploy the studio to production:
+```bash
 npm run deploy
+```
 
 This updates the live instance at:
-👉 rajeev-kumar-blog.sanity.studio
+```bash
+👉 rajeev-kumar-blog.sanity.
+```
 
 📝 Custom SEO Schema Implementation
  i implemented a reusable SEO object:
-
 
 Fields:
 metaTitle – Title for search engines (Max 60 chars)
@@ -95,11 +105,13 @@ metaDescription – Summary for search results (Max 160 chars)
 openGraphImage – Image for LinkedIn/WhatsApp sharing
 
 Usage inside post.js:
+```bash
 defineField({
   name: 'seo',
   title: 'SEO Settings',
   type: 'seo',
 })
+```
 
 👤 Author
 Rajeev Kumar
