@@ -113,7 +113,7 @@ defineField({
 })
 ```
 
-👤 Author
+👤 Author:
 Rajeev Kumar
 Portfolio: https://rajeev-portfolio-delta.vercel.app/
 GitHub: https://github.com/rajeevkumar-nita
